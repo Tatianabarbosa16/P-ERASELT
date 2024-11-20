@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gestión de Huella Digital</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Eraselt</h1>
+        <h1>Gestión de Huella Digital</h1>
+        <center>
+            <p>
+                ¡Bienvenido! Esta aplicación te ayuda a gestionar y eliminar información sensible de tus cuentas en
+                línea.
+                Realiza búsquedas de datos públicos, gestiona tus cuentas y protege tu privacidad.
+            </p>
+        </center>
+        <center>
+            <div class="features">
+                <h3>¿Qué puedes hacer con Eraselt?</h3>
+                <ul>
+                    <ul>🔍 <strong>Buscar y visualizar:</strong> Encuentra y revisa toda la información pública sobre
+                        tus cuentas en línea.</li>
+                    <ul>🛡️ <strong>Gestión de cuentas:</strong> Añade, actualiza o elimina información de tus cuentas
+                        de manera sencilla.</li>
+                    <ul>🔒 <strong>Protege tu privacidad:</strong> Elimina datos sensibles y mejora la seguridad de tus
+                        cuentas.</li>
+                    <ul>📊 <strong>Reportes detallados:</strong> Genera informes para obtener una visión clara de tu
+                        huella digital.</li>
+                </ul>
+            </div>
+        </center>
+    </header>
+
+    <!-- Sección de prueba gratuita -->
+    <center>
+        <section class="intro-section">
+            <h2>Prueba Gratuita</h2>
+            <p>
+                Ingresa tu información para realizar una búsqueda simulada y encontrar datos sensibles públicos.
+                Comienza a proteger tu privacidad hoy mismo.
+            </p>
+            <form id="trialForm">
+                <input type="text" id="userName" placeholder="Tu Nombre" required>
+
+                <input type="email" id="userEmail" placeholder="Tu Correo Electrónico" required>
+
+                <button type="submit" id="startTrialButton">Iniciar Prueba</button>
+
+            </form>
+        </section>
+    </center>
+
+    <!-- Resultados simulados después de la búsqueda -->
+    <section id="searchResultsSection" style="display: none;">
+        <h2>Cuentas Encontradas</h2>
+        <p>
+            Los siguientes datos públicos han sido simulados para mostrar cómo puedes gestionar tu información.
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Tipo de Dato</th>
+                    <th>URL</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="searchResultsTable">
+                <!-- Aquí se cargarán los datos simulados -->
+            </tbody>
+        </table>
+        <button id="goToCrudButton">Gestionar Mis Cuentas</button>
+    </section>
+
+    <!-- Gestión de cuentas (CRUD) -->
+    <section id="crudSection" style="display: none;">
+        <h2>Gestión de Cuentas</h2>
+
+        <!-- Contenedor de mensajes -->
+        <div class="message-box" id="messageBox"></div>
+
+        <!-- Formulario para agregar/editar cuentas -->
+        <form id="accountForm">
+            <input type="text" id="platformName" placeholder="Nombre de la plataforma" required>
+            <input type="url" id="profileUrl" placeholder="URL del perfil" required>
+            <input type="text" id="infoType" placeholder="Tipo de información" required>
+            <div id="boton-agregar-cuenta">
+                <button type="submit" class="agregar-cuenta">Agregar Cuenta</button>
+            </div>
+        </form>
+
+        <!-- Tabla para mostrar las cuentas -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Plataforma</th>
+                    <th>URL</th>
+                    <th>Tipo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="accountsTable"></tbody>
+        </table>
+
+        <!-- Formulario de edición -->
+        <div id="editForm" style="display: none; margin-top: 20px;">
+            <h3>Editar Cuenta</h3>
+            <form id="updateForm">
+                <label for="editPlatformName">Nombre de la plataforma:</label>
+                <input type="text" id="editPlatformName" required><br>
+
+                <label for="editProfileUrl">URL del perfil:</label>
+                <input type="text" id="editProfileUrl" required><br>
+
+                <label for="editInfoType">Tipo de información:</label>
+                <input type="text" id="editInfoType" required><br>
+
+                <button type="submit">Guardar cambios</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="simulatedSearch.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

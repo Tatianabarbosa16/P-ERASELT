@@ -1,0 +1,136 @@
+.body
+
+/* Estilo para el fondo de la página */
+body {
+    background-image: url('/P-ERASELT/frontend/assets/download.jpeg');
+    
+    background-size: cover;
+    /* Tamaño de la imagen para cubrir toda la pantalla */
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+  font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input,
+button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input {
+    flex: 1;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.message-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Centrar el formulario en la página */
+#trialForm {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Estilo para el formulario */
+#trialForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    /* Bordes redondeados */
+
+}
+
+/* Estilo para los elementos del formulario */
+#trialForm input,
+#trialForm button {
+    margin-bottom: 15px;
+    /* Espacio entre los elementos */
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Estilo para el botón */
+#trialForm button {
+    padding: 10px;  
+    font-size: 14px;
+    width: 170px;
+    /* Ajusta el ancho automáticamente según el contenido */
+}
